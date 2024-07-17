@@ -59,11 +59,22 @@
   }
 }
 
+@font-face {
+  font-family: "Neue Plak Extended";
+  src: url("../fonts/Neue Plak Extended Regular.ttf");
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  @font-face {
+    font-family: "Neue Plak Extended";
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Neue Plak Extended Regular.ttf") format("ttf");
   }
 }

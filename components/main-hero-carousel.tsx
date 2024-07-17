@@ -21,7 +21,7 @@ export function MainHeroCarousel() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-4 text-center text-primary-foreground">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl tracking-[1px]">
+                <h1 className="text-4xl font-bold tracking-[-1px] sm:text-5xl md:text-6xl ">
                   Welcome to United Roblox!
                 </h1>
                 <p className="max-w-[700px] text-lg md:text-xl">

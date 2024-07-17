@@ -9,8 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const neueregular = localFont({
-  src: "../fonts/Neue Plak Regular.ttf",
-  variable: "--font-neue-plak",
+  src: "../fonts/Neue Plak Extended Bold.ttf",
 });
 export const metadata: Metadata = {
   title: "United Roblox",
@@ -24,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={neueregular.variable}>
+      <body className={neueregular.className}>
         <div className="fixed top-0 left-0 z-50 w-full bg-background/50 backdrop-blur-md">
           <div className="container flex h-16 items-center justify-between px-4 md:px-6">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
