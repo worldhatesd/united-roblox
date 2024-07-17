@@ -34,8 +34,8 @@ export function MainHeroCarousel() {
                   Welcome to United Roblox!
                 </h1>
                 <p className="max-w-[700px] text-lg md:text-xl">
-                  Welcome to our Roblox Aviation Group! We're thrilled to have
-                  you aboard. Whether you're a seasoned pilot or just starting
+                  Welcome to our Roblox Aviation Group! We are thrilled to have
+                  you aboard. Whether you are a seasoned pilot or just starting
                   your aviation journey, our community is here to support and
                   share the skies with you. Fly high and have fun!
                 </p>
