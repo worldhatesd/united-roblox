@@ -13,7 +13,7 @@ export function MainHeroCarousel() {
           <CarouselItem>
             <div className="relative h-[600px] w-full overflow-hidden">
               <img
-                src="https://utfs.io/f/a6397bed-3a00-42ac-b845-86de975df6e4-1d.png"
+                src="https://utfs.io/f/1dedaa6b-b508-4c45-9435-14e6391b8d94-1f.png"
                 alt="Image 1"
                 width="1920"
                 height="600"
