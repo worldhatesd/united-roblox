@@ -8,16 +8,7 @@ import Link from "next/link";
 export function MainHeroCarousel() {
   return (
     <section className="w-full">
-      <Carousel
-        className="w-full"
-        autoPlay={{ delay: 5000, disableOnInteraction: false }}
-        loop
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-      >
+      <Carousel className="w-full">
         <CarouselContent>
           <CarouselItem>
             <div className="relative h-[600px] w-full overflow-hidden">
