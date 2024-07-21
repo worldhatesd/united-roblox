@@ -38,7 +38,12 @@ export default function RootLayout({
                 className="flex items-center gap-2"
                 prefetch={false}
               >
-                <span className="sr-only">United Roblox</span>
+                <img
+                  className="h-6 w-6"
+                  src="https://utfs.io/f/6819230d-46f9-418f-910a-754f565fc742-dg3qll.png"
+                  alt="Acme Inc"
+                />
+                <span className="sr-only">Acme Inc</span>
               </Link>
               <nav className="hidden md:flex items-center gap-4">
                 <Link
