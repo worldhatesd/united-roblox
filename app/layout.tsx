@@ -43,9 +43,9 @@ export default function RootLayout({
                   src="https://utfs.io/f/6819230d-46f9-418f-910a-754f565fc742-dg3qll.png"
                   alt="Acme Inc"
                 />
-                <span className="sr-only">Acme Inc</span>
+                <span className="sr-only">United Roblox</span>
               </Link>
-              <nav className="hidden md:flex items-center gap-4">
+              <nav className="hidden md:flex items-center gap-4 justify-center">
                 <Link
                   href="#"
                   className="text-sm font-medium text-foreground transition-colors hover:text-primary"
