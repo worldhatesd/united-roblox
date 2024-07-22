@@ -13,7 +13,7 @@ export default async function Home() {
   const groupId = process.env.groupId;
 
   const response = await axios.get(
-    `http://groups.roblox.com/v1/groups/${groupId}`,
+    `http://groups.roblox.com/v1/groups/15667508`,
     {
       headers: {
         "Content-Type": "application/json",
