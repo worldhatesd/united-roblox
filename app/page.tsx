@@ -22,7 +22,7 @@ export default async function Home() {
     },
   });
   const data = await response.json();
-  setUserCount(data.memberCount);
+  console.log(data);
 
   /* const response = await axios.get(
     `http://groups.roblox.com/v1/groups/15667508`,
@@ -52,7 +52,7 @@ export default async function Home() {
       <main className="flex flex-row items-center justify-between px-72 h-48">
         <div className="flex flex-col gap-1 items-center">
           <Users size={48} />
-          <h1 className="text-6xl font-bold pt-3">{userCount}</h1>
+          <h1 className="text-6xl font-bold pt-3">{data.memberCount}</h1>
           <h1 className="text-3xl font-bold">members</h1>
         </div>
         <div className="flex flex-col gap-1 items-center">
