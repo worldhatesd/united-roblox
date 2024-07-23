@@ -1,6 +1,5 @@
 "use client";
 import { MainHeroCarousel } from "@/components/main-hero-carousel";
-import axios from "axios";
 import dotenv from "dotenv";
 import { Map, Plane, Users } from "lucide-react";
 import { useState } from "react";
@@ -12,7 +11,20 @@ export default async function Home() {
   let destinationCount = 9;
   const groupId = process.env.groupId;
 
-  const response = await axios.get(
+  const response = await fetch(`http://groups.roblox.com/v1/groups/15667508`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+      "Access-Control-Allow-Headers":
+        "x-access-token, Origin, X-Requested-With, Content-Type, Accept",
+    },
+  });
+  const data = await response.json();
+  console.log(data);
+
+  /* const response = await axios.get(
     `http://groups.roblox.com/v1/groups/15667508`,
     {
       headers: {
@@ -30,6 +42,7 @@ export default async function Home() {
   const memerCount = response.data.memberCount;
   console.log(response.data.memberCount);
   setUserCount(memerCount);
+*/
   return (
     <>
       <MainHeroCarousel />
@@ -39,7 +52,7 @@ export default async function Home() {
       <main className="flex flex-row items-center justify-between px-72 h-48">
         <div className="flex flex-col gap-1 items-center">
           <Users size={48} />
-          <h1 className="text-6xl font-bold pt-3">{}</h1>
+          <h1 className="text-6xl font-bold pt-3">{data.memberCount}</h1>
           <h1 className="text-3xl font-bold">members</h1>
         </div>
         <div className="flex flex-col gap-1 items-center">
