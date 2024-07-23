@@ -32,7 +32,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={neueregular.className}>
           <div className="fixed top-0 left-0 z-50 w-full bg-background/50 backdrop-blur-md">
-            <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+            <div className="container flex h-16 items-center justify-between px-4 md:px-6 m-auto">
               <Link
                 href="#"
                 className="flex items-center gap-2"
